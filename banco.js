@@ -8,7 +8,8 @@ let dados = [
         podendo pesar até 180 toneladas. Possui um corpo alongado e azulado, e se alimenta principalmente
         de krill, sendo conhecida por suas vocalizações profundas. Atualmente, a rainha dos mares enfrenta
         ameaças devido à caça comercial humana com o intuito de extrair o chamado "Óleo de Baleia", muito
-        utilizado na indústria para iluminação, lubrificação de máquinas e produção de sabão.`
+        utilizado na indústria para iluminação, lubrificação de máquinas e produção de sabão.`,
+        img: 'url(../img/baleia-azul.png)'
     },
     {
         nome: `Tigre-de-Bengala`,
@@ -46,7 +47,8 @@ let dados = [
         descricao: `O coala é um marsupial nativo da Austrália, conhecido por seu aspecto adorável e seus hábitos
         arbóreos. Alimenta-se exclusivamente de folhas de eucalipto e vive em áreas de floresta. Enfrenta ameaças de
         perda de habitat devido a incêndios florestais e desenvolvimento urbano, além de doenças que afetam suas
-        populações.`
+        populações.`,
+        img: 'url(../img/bg-coala.png)'
     },
     {
         nome: `Corvo-de-cabeça-branca`,

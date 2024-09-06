@@ -18,7 +18,10 @@
 }
 
 body {
-    background: url(../img/bg-coala.png) no-repeat center center fixed;
+    background-image: url(../img/bg-coala.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -39,7 +42,7 @@ main{
     background-color: rgba(0,0,0,0.7);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: inherit;
@@ -73,6 +76,10 @@ header {
 .title {
     font-size: 3.5vw;
     letter-spacing: 0.2vw;
+    color: var(--azul-claro);
+}
+.sub-title {
+    font-size: 1.2rem;
     color: var(--white);
 }
 
@@ -107,6 +114,8 @@ footer {
 /* Section Informações Animais */
 #sec-info {
     display: none;
+    flex-direction: column;
+    gap: 4vh;
     & div p span {
         font-weight: bold;
         color: var(--azul-claro);
@@ -131,4 +140,11 @@ footer {
         font-size: 2.5rem;
         align-self: center;
     }
+}
+.text-na {
+    font-size: 2rem;
+    letter-spacing: 0.2vw;
+    position: relative;
+    top: -3vh;
+    color: var(--white);
 }
