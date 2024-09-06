@@ -7,7 +7,12 @@ function click() {
     let mensagem = ``;
 
     for (let animal of dados) {
-        if (animal.nome.toLowerCase().includes(searchInput)) {
+        if (!searchInput) {
+            secSearch.style.display = 'none';
+            secInfo.style.display = 'flex';
+            mensagem = `<p class='text-na'>Digite o nome do animal que deseja encontrar</p>`;
+            body.style.backgroundImage = `url(${animalInvertidos.img})`;
+        } else if (animal.nome.toLowerCase().includes(searchInput)) {
             secSearch.style.display = 'none';
             secInfo.style.display = 'flex';
             mensagem += `
