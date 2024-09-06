@@ -141,6 +141,6 @@ let dados = [
         origem: `Ártico`,
         descricao: `O urso polar é um predador apex do Ártico, adaptado para caçar focas e sobreviver em temperaturas extremamente baixas. Enfrenta ameaças de perda de habitat devido ao derretimento do gelo marinho causado pelas mudanças climáticas. A proteção do habitat ártico é essencial para a conservação desta espécie.`,
         img: 'assets/img/urso-polar.jpg',
-        tags: ['urso polar', 'Ursus maritimus', 'urso', 'Ártico', 'caçador de focas', 'mudanças climáticas']
+        tags: ['urso polar', 'Ursus maritimus', 'urso', 'Ártico', 'caçador de focas', 'mudanças climáticas', 'polo norte']
     }
 ];

@@ -7,12 +7,7 @@ function click() {
     let mensagem = ``;
 
     for (let animal of dados) {
-        if (!searchInput) {
-            secSearch.style.display = 'none';
-            secInfo.style.display = 'flex';
-            mensagem = `<p class='text-na'>Digite o nome do animal que deseja encontrar</p>`;
-            body.style.backgroundImage = `url(${animalInvertidos.img})`;
-        } else if (animal.nome.toLowerCase().includes(searchInput)) {
+        if (animal.tags.join(' ').toLowerCase().includes(searchInput)) {
             secSearch.style.display = 'none';
             secInfo.style.display = 'flex';
             mensagem += `
@@ -24,11 +19,12 @@ function click() {
                 <p><span>Descrição:</span><br>${animal.descricao}</p>
             </div>
             `;
+            break;
         }
     }
 
     for (let animalInvertidos of [...dados].reverse()) {
-        if (animalInvertidos.nome.toLowerCase().includes(searchInput)) {
+        if (animalInvertidos.tags.join(' ').toLowerCase().includes(searchInput)) {
             body.style.backgroundImage = `url(${animalInvertidos.img})`;
         }
     }

@@ -40,7 +40,7 @@ main{
     align-items: center;
 }
 .overlay {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.9);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -78,6 +78,7 @@ header {
     font-size: 3.5vw;
     letter-spacing: 0.2vw;
     color: var(--azul-claro);
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.4);
 }
 .sub-title {
     font-size: 1.2rem;
