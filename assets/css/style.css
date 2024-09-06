@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    --white: #FFFFFF;
+    --white-gray: #f0f0f0;
+    --black-gray: rgb(0, 0, 0);
+    --azul-claro: #96c4ff;
+}
+
+body {
+    background: url(../img/bg-coala.png) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: inherit;
+}
+
+.logo-header {
+    width: 10vw;
+}
+
+.white {
+    color: white;
+}
+header h1 {
+    font-size: 3rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+}
+#sec-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+    top: -2.5vw;
+}
+.title {
+    font-size: 3.5vw;
+    letter-spacing: 0.2vw;
+    color: var(--white);
+}
+
+
+.div-input {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.div-input input{
+    color: var(--black-gray);
+    font-size: 1.5rem;
+    padding: 0.5vw 0.9vw;
+    width: 22vw;
+    border-radius: 40px;
+}
+.div-input i {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 2vw 3vw;
+}
+
+/* Section Informações Animais */
+#sec-info {
+    display: none;
+    & div p span {
+        font-weight: bold;
+        color: var(--azul-claro);
+        font-size: 1.3rem;
+    }
+    & .border {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        color: var(--white);
+        gap: 1.2vw;
+        font-size: 1.2rem;
+        text-align: justify;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2vw;
+        border-radius: 1vw;
+        border: 0.2rem solid var(--white);
+    }
+    & h2 {
+        color: var(--azul-claro);
+        font-size: 2.5rem;
+        align-self: center;
+    }
+}
