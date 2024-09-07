@@ -19,13 +19,8 @@ function click() {
                 <p><span>Descrição:</span><br>${animal.descricao}</p>
             </div>
             `;
+            body.style.backgroundImage = `url(${animal.img})`;
             break;
-        }
-    }
-
-    for (let animalInvertidos of [...dados].reverse()) {
-        if (animalInvertidos.tags.join(' ').toLowerCase().includes(searchInput)) {
-            body.style.backgroundImage = `url(${animalInvertidos.img})`;
         }
     }
 
