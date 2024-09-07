@@ -157,7 +157,7 @@ footer {
         padding: 2vw;
         border-radius: 1vw;
         border: 0.2rem solid var(--white);
-        transition: scale 0.3s ease;
+        transition: scale 0.4s ease;
         cursor: pointer;
         
         &:hover {
