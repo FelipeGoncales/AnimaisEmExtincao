@@ -142,5 +142,122 @@ let dados = [
         descricao: `O urso polar é um predador apex do Ártico, adaptado para caçar focas e sobreviver em temperaturas extremamente baixas. Enfrenta ameaças de perda de habitat devido ao derretimento do gelo marinho causado pelas mudanças climáticas. A proteção do habitat ártico é essencial para a conservação desta espécie.`,
         img: 'assets/img/urso-polar.jpg',
         tags: ['urso polar', 'Ursus maritimus', 'urso', 'Ártico', 'caçador de focas', 'mudanças climáticas', 'polo norte']
+    },
+    {
+        nome: `Tigre Siberiano`,
+        nomeCientifico: `Panthera tigris altaica`,
+        habitat: `Terrestre`,
+        origem: `Sibéria`,
+        descricao: `O tigre siberiano é a maior subespécie de tigre, com uma pelagem densa e adaptada ao frio extremo. Vive em florestas temperadas e enfrenta ameaças de caça furtiva e perda de habitat. Sua população é crítica, com esforços de conservação em andamento para proteger esse majestoso predador.`,
+        img: 'assets/img/tigre-siberiano.jpg',
+        tags: ['tigre siberiano', 'Panthera tigris altaica', 'tigre', 'Sibéria', 'florestas temperadas', 'caça furtiva']
+    },
+    {
+        nome: `Lobo-cinzento`,
+        nomeCientifico: `Canis lupus`,
+        habitat: `Terrestre`,
+        origem: `Hemisfério Norte`,
+        descricao: `O lobo-cinzento é um predador icônico, conhecido por sua estrutura social em matilhas. Vive em diversas regiões do Hemisfério Norte, mas enfrenta ameaças de caça e destruição de habitat. Os esforços de reintrodução em áreas protegidas são vitais para sua sobrevivência.`,
+        img: 'assets/img/lobo-cinzento.jpg',
+        tags: ['lobo-cinzento', 'Canis lupus', 'lobo', 'Hemisfério Norte', 'matilhas', 'caça']
+    },
+    {
+        nome: `Lêmure-de-cauda-anelada`,
+        nomeCientifico: `Lemur catta`,
+        habitat: `Terrestre`,
+        origem: `Madagascar`,
+        descricao: `O lêmure-de-cauda-anelada é uma espécie endêmica de Madagascar, conhecida por sua cauda listrada em preto e branco. Vive em áreas de floresta seca e enfrenta ameaças como desmatamento e caça. A conservação de seu habitat natural é crucial para a sobrevivência desta espécie.`,
+        img: 'assets/img/lemure-cauda-anelada.jpg',
+        tags: ['lêmure-de-cauda-anelada', 'Lemur catta', 'lêmure', 'Madagascar', 'floresta seca', 'desmatamento']
+    },
+    {
+        nome: `Orangotango-de-sumatra`,
+        nomeCientifico: `Pongo abelii`,
+        habitat: `Terrestre`,
+        origem: `Sumatra`,
+        descricao: `O orangotango-de-sumatra é uma das espécies de primatas mais ameaçadas, conhecida por sua inteligência e habilidades de usar ferramentas. Habita florestas tropicais e enfrenta ameaças de desmatamento e caça. Esforços de conservação são cruciais para proteger essa espécie.`,
+        img: 'assets/img/orangotango-sumatra.jpg',
+        tags: ['orangotango-de-sumatra', 'Pongo abelii', 'orangotango', 'Sumatra', 'florestas tropicais', 'desmatamento']
+    },
+    {
+        nome: `Tartaruga-oliva`,
+        nomeCientifico: `Lepidochelys olivacea`,
+        habitat: `Marinho`,
+        origem: `Oceanos Tropicais`,
+        descricao: `A tartaruga-oliva é uma das menores espécies de tartarugas marinhas, conhecida por seus hábitos de nidificação em massa. Vive em águas tropicais e enfrenta ameaças como captura acidental e destruição de habitat. Esforços de conservação são vitais para proteger seus locais de desova.`,
+        img: 'assets/img/tartaruga-oliva.jpg',
+        tags: ['tartaruga-oliva', 'Lepidochelys olivacea', 'tartaruga marinha', 'oceanos tropicais', 'nidificação', 'captura acidental']
+    },
+    {
+        nome: `Rinoceronte-negro`,
+        nomeCientifico: `Diceros bicornis`,
+        habitat: `Terrestre`,
+        origem: `África Subsaariana`,
+        descricao: `O rinoceronte-negro é criticamente ameaçado devido à caça ilegal por seus chifres. Vive em savanas e áreas florestais, com menos de 5.000 indivíduos restantes. A luta contra a caça furtiva e a proteção de seu habitat são essenciais para sua sobrevivência.`,
+        img: 'assets/img/rino-negro.jpg',
+        tags: ['rinoceronte-negro', 'Diceros bicornis', 'rinoceronte', 'África Subsaariana', 'caça furtiva', 'savanas']
+    },
+    {
+        nome: `Araponga-da-amazônia`,
+        nomeCientifico: `Procnias albus`,
+        habitat: `Terrestre`,
+        origem: `Amazônia`,
+        descricao: `A araponga-da-amazônia é uma ave conhecida por seu canto alto e ressonante. Vive nas florestas tropicais da Amazônia e enfrenta ameaças de desmatamento. A preservação de seu habitat é crucial para a sobrevivência desta espécie icônica da Amazônia.`,
+        img: 'assets/img/araponga-amazonia.jpg',
+        tags: ['araponga-da-amazônia', 'Procnias albus', 'ave', 'Amazônia', 'florestas tropicais', 'desmatamento']
+    },
+    {
+        nome: `Cavalo-de-Przewalski`,
+        nomeCientifico: `Equus ferus przewalskii`,
+        habitat: `Terrestre`,
+        origem: `Ásia Central`,
+        descricao: `O cavalo-de-Przewalski é o último cavalo selvagem verdadeiro, nativo das estepes da Ásia Central. Sua população foi drasticamente reduzida devido à caça e perda de habitat, mas esforços de reintrodução em áreas protegidas têm ajudado na recuperação da espécie.`,
+        img: 'assets/img/cavalo-przewalski.jpg',
+        tags: ['cavalo-de-Przewalski', 'Equus ferus przewalskii', 'cavalo selvagem', 'Ásia Central', 'estepe', 'reintrodução']
+    },
+    {
+        nome: `Condor-da-califórnia`,
+        nomeCientifico: `Gymnogyps californianus`,
+        habitat: `Terrestre`,
+        origem: `América do Norte`,
+        descricao: `O condor-da-califórnia é uma das aves mais raras do mundo, com uma envergadura impressionante. Vive em áreas montanhosas e enfrenta ameaças de envenenamento por chumbo e perda de habitat. Esforços de reprodução em cativeiro têm sido fundamentais para evitar sua extinção.`,
+        img: 'assets/img/condor-california.jpg',
+        tags: ['condor-da-califórnia', 'Gymnogyps californianus', 'ave', 'América do Norte', 'montanhas', 'envenenamento por chumbo']
+    },
+    {
+        nome: `Iaque Selvagem`,
+        nomeCientifico: `Bos mutus`,
+        habitat: `Terrestre`,
+        origem: `Tibete`,
+        descricao: `O iaque selvagem é um bovino nativo das altas montanhas do Tibete, conhecido por sua resistência ao frio extremo. Vive em altitudes elevadas e enfrenta ameaças de caça e perda de habitat. A proteção de suas áreas naturais é crucial para a sobrevivência desta espécie.`,
+        img: 'assets/img/iaque-selvagem.jpg',
+        tags: ['iaque selvagem', 'Bos mutus', 'bovino', 'Tibete', 'montanhas', 'altitude elevada']
+    },
+    {
+        nome: `Cão-selvagem-africano`,
+        nomeCientifico: `Lycaon pictus`,
+        habitat: `Terrestre`,
+        origem: `África`,
+        descricao: `O cão-selvagem-africano é um predador altamente social, conhecido por suas caçadas cooperativas. Vive em savanas e enfrenta ameaças como perda de habitat e conflitos com humanos. Esforços de conservação são necessários para proteger essa espécie altamente ameaçada.`,
+        img: 'assets/img/cao-selvagem-africano.jpg',
+        tags: ['cão-selvagem-africano', 'Lycaon pictus', 'predador', 'África', 'savana', 'caçadas cooperativas']
+    },
+    {
+        nome: `Iguana-de-Fiji`,
+        nomeCientifico: `Brachylophus vitiensis`,
+        habitat: `Terrestre`,
+        origem: `Ilhas Fiji`,
+        descricao: `A iguana-de-Fiji é uma das espécies de répteis mais ameaçadas, conhecida por sua coloração verde brilhante. Vive em florestas tropicais das Ilhas Fiji e enfrenta ameaças como a introdução de espécies invasoras e perda de habitat. A conservação de seu habitat é vital para sua sobrevivência.`,
+        img: 'assets/img/iguana-fiji.jpg',
+        tags: ['iguana-de-Fiji', 'Brachylophus vitiensis', 'réptil', 'Ilhas Fiji', 'florestas tropicais', 'espécies invasoras']
+    },
+    {
+        nome: `Jacaré-de-papo-amarelo`,
+        nomeCientifico: `Caiman latirostris`,
+        habitat: `Aquático`,
+        origem: `América do Sul`,
+        descricao: `O jacaré-de-papo-amarelo é uma espécie de crocodiliano que habita áreas úmidas da América do Sul. Enfrenta ameaças de caça ilegal e destruição de habitat. Esforços de conservação têm ajudado a estabilizar suas populações, mas a vigilância contínua é necessária para garantir sua proteção.`,
+        img: 'assets/img/jacare-papo-amarelo.jpg',
+        tags: ['jacaré-de-papo-amarelo', 'Caiman latirostris', 'crocodiliano', 'América do Sul', 'áreas úmidas', 'caça ilegal']
     }
 ];

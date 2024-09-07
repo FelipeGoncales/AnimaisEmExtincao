@@ -14,7 +14,7 @@
     --white: #FFFFFF;
     --white-gray: #f0f0f0;
     --black-gray: rgb(0, 0, 0);
-    --azul-claro: #96c4ff;
+    --letras: #96c4ff;
 }
 
 body {
@@ -78,7 +78,7 @@ header {
 .title {
     font-size: 4rem;
     letter-spacing: 0.2vw;
-    color: var(--azul-claro);
+    color: var(--letras);
     text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.4);
 }
 .sub-title {
@@ -121,7 +121,7 @@ footer {
     gap: 5vh;
     & div p span {
         font-weight: bold;
-        color: var(--azul-claro);
+        color: var(--letras);
         font-size: 1.5rem;
     }
     & .border {
@@ -139,7 +139,7 @@ footer {
         border: 0.2rem solid var(--white);
     }
     & h2 {
-        color: var(--azul-claro);
+        color: var(--letras);
         font-size: 2.5rem;
         align-self: center;
     }
