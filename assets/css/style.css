@@ -14,7 +14,7 @@
     --white: #FFFFFF;
     --white-gray: #f0f0f0;
     --black-gray: rgb(0, 0, 0);
-    --letras: #96c4ff;
+    --letras: #3dcb84;
 }
 
 body {
@@ -79,7 +79,7 @@ header {
     font-size: 4rem;
     letter-spacing: 0.2vw;
     color: var(--letras);
-    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.4);
+    align-self: center;
 }
 .sub-title {
     font-size: 1.2rem;

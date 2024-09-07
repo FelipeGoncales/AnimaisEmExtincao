@@ -3,11 +3,14 @@ function click() {
     let secSearch = document.getElementById('sec-search');
     let searchInput = (document.getElementById('search-input').value).toLowerCase();
     let body = document.querySelector('body');
+    let root = document.documentElement;
 
     let mensagem = ``;
 
     for (let animal of dados) {
-        if (animal.tags.join(' ').toLowerCase().includes(searchInput)) {
+        if (!searchInput) {
+            return;
+        } else if (animal.tags.join(' ').toLowerCase().includes(searchInput)) {
             secSearch.style.display = 'none';
             secInfo.style.display = 'flex';
             mensagem += `
@@ -20,6 +23,7 @@ function click() {
             </div>
             `;
             body.style.backgroundImage = `url(${animal.img})`;
+            root.style.setProperty('--letras',`${animal.color}`)
             break;
         }
     }
