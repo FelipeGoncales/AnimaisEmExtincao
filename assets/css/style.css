@@ -101,9 +101,10 @@ header {
     display: flex;
     flex-direction: column;
     z-index: 2;
+    position: relative;
     & ul {
         position: absolute;
-        top: 11.4vh;
+        top: 49px;
     }
     & ul li {
         list-style-type: none;
