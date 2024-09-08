@@ -29,7 +29,7 @@ body {
     height: 100vh;
     position: absolute;
     z-index: -1;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,8 +55,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    padding-bottom: 0;
     & .logo-header {
-        width: 180px;
+        width: 205px;
         cursor: pointer;
         transition: 0.4s ease;
         &:hover {
@@ -64,7 +65,7 @@ header {
         }
     }
     & h1 {
-        font-size: 3rem;
+        font-size: 3em;
         transition: 0.4s ease;
         color: var(--white);
         &:hover {
@@ -87,13 +88,13 @@ header {
     }
 }
 .title {
-    font-size: 4rem;
+    font-size: 4em;
     letter-spacing: 4px;
     color: var(--letras);
     align-self: center;
 }
 .sub-title {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: var(--white);
 }
 
@@ -128,7 +129,7 @@ header {
     width: 420px;
     & input{
         color: var(--black-gray);
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding: 7px 17px;
         border-radius: 40px;
         width: 100%;
@@ -153,17 +154,26 @@ footer {
     flex-direction: column;
     align-items: center;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 2vw 3vw;
+    & p {
+        font-size: 1em;
+        text-align: center;
+    }
 }
 
 /* Section Informações Animais */
 #sec-info {
     display: none;
-    & div p span {
+    justify-content: center;
+    align-items: center;
+    & div .texto-p {
+        font-size: 1em;
+    }
+    & div span {
         font-weight: bold;
         color: var(--letras);
-        font-size: 1.5rem;
+        font-size: 1.2em;
     }
     & .border {
         display: flex;
@@ -171,13 +181,12 @@ footer {
         width: 520px;
         color: var(--white);
         gap: 25px;
-        font-size: 1.2rem;
-        text-align: justify;
+        font-size: 1.2em;
         justify-content: center;
         align-items: flex-start;
         padding: 30px;
         border-radius: 20px;
-        border: 0.2rem solid var(--white);
+        border: 0.2em solid var(--white);
         transition: scale 0.4s ease;
         cursor: pointer;
         
@@ -187,14 +196,180 @@ footer {
     }
     & h2 {
         color: var(--letras);
-        font-size: 2.5rem;
+        font-size: 2em;
         align-self: center;
     }
 }
 .text-na {
-    font-size: 2rem;
-    letter-spacing: 3px;
+    font-size: 1.8em;
+    letter-spacing: 2px;
     position: relative;
+    text-align: center;
     top: -3vh;
     color: var(--white);
+}
+
+@media (max-width: 1600px) {
+    body {
+        font-size: 15px;
+    }
+    .div-pesquisa ul {
+        top: 46px;
+    }
+    header .logo-header {
+        width: 182px;
+    }
+}
+/* END */
+@media (max-width: 1367px) {
+    body {
+        font-size: 14px;
+    }
+    .div-pesquisa ul {
+        top: 45px;
+    }
+    header .logo-header {
+        width: 170px;
+    }
+    #sec-info .border {
+        padding: 25px;
+        border-radius: 12px;
+    }
+}
+/* END */
+@media (max-width: 1248px) {
+    body {
+        font-size: 13.5px;
+    }
+    .div-pesquisa ul {
+        top: 43px;
+    }
+    header .logo-header {
+        width: 170px;
+    }
+}
+/* END */
+@media (max-width: 1129px) {
+    body {
+        font-size: 11px;
+    }
+    .div-pesquisa ul {
+        top: 40px;
+    }
+    #sec-info .border {
+        padding: 20px;
+        width: 380px;
+    }
+    header .logo-header {
+        width: 133px;
+    }
+    .div-input {
+        width: 380px;
+        & #search-icon {
+            font-size: 28px;
+            }
+        }
+    .div-pesquisa {
+    & ul li {
+        width: 380px;
+        }
+    }
+}
+/* END */
+@media (max-width: 769px) {
+    *:hover {
+        scale: none !important;
+    }
+
+    body {
+        font-size: 11px;
+    }
+
+    .div-pesquisa ul {
+        top: 39px;
+    }
+    #sec-info .border {
+        padding: 20px;
+        width: 390px;
+        gap: 10px;
+        & p {
+            font-size: 1.2em;
+        }
+        & span {
+            font-size: 1.2em;
+        }
+        & h2 {
+            font-size: 2.5em;
+        }
+    }
+    header {
+        padding: 15px 30px;
+        & .logo-header {
+            width: 133px;
+        }
+    }
+    .div-input {
+        width: 310px;
+        }
+    .div-pesquisa {
+    & ul li {
+        width: 310px;
+        }
+    }
+    .text-na {
+        font-size: 2.3em;
+    }
+}
+/* END */
+@media (max-width: 691px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: -10px;
+        & .div-pesquisa {
+            order: 3;
+        }
+        & h1 {
+            position: relative;
+            top: -18px;
+        }
+    }
+    .text-na {
+        width: 80%;
+    }
+    .div-input input {
+        font-size: 1.8em;
+    }
+    .div-pesquisa {
+        & ul li {
+            font-size: 1.4em;
+            padding: 10px 20px;
+        }
+    }
+    #sec-info .border {
+        position: relative;
+        top: -5px;
+        width: 85%;
+        gap: 20px;
+    }
+}
+/*END*/
+@media (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+}
+/*END*/
+@media (max-width: 321px) {
+    .div-input {
+        width: 280px;
+    }
+    .div-pesquisa ul li {
+        width: 280px;
+    }
+    #sec-info .border {
+        gap: 10px;
+        width: 90%;
+        padding: 15px;
+    }
 }

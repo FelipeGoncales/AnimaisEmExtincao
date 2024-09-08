@@ -27,10 +27,10 @@ function click() {
             mensagem += `
             <div class='border'>
                 <h2>${animal.nome}</h2>
-                <p><span>Nome Científico:</span><br><i>${animal.nomeCientifico}</i></p>
-                <p><span>Habitat:</span><br>${animal.habitat}</p>
-                <p><span>Origem:</span><br>${animal.origem}</p>
-                <p><span>Descrição:</span><br>${animal.descricao}</p>
+                <p class='texto-p'><span>Nome Científico:</span><br><i>${animal.nomeCientifico}</i></p>
+                <p class='texto-p'><span>Habitat:</span><br>${animal.habitat}</p>
+                <p class='texto-p'><span>Origem:</span><br>${animal.origem}</p>
+                <p class='texto-p'><span>Descrição:</span><br>${animal.descricao}</p>
             </div>
             `; // Adiciona a informação do animal à mensagem
             body.style.backgroundImage = `url(${animal.img})`; // Define a imagem de fundo com a imagem do animal
