@@ -17,6 +17,7 @@ function click() {
             secInfo.style.display = 'flex'; // Mostra a seção de informações
             mensagem = `<p class='text-na'>Digite o nome de algum animal para encontrá-lo!</p>`; // Define a mensagem padrão
             body.style.backgroundImage = 'url(assets/img/bg-padrao.jpg)'; // Define a imagem de fundo padrão
+            document.getElementById('search-input').style.borderRadius = '1em 1em 1em 1em'; // Arredonda as bordas do input caso esteja vazio
             secInfo.innerHTML = mensagem; // Atualiza o conteúdo da seção de informações
             return; // Sai da função
         } else if (animal.tags.join(' ').toLowerCase().includes(searchInput)) {

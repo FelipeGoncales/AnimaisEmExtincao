@@ -50,28 +50,27 @@ main{
     z-index: inherit;
 }
 
-.logo-header {
-    width: 10vw;
-    cursor: pointer;
-    transition: 0.4s ease;
-    &:hover {
-        scale: 1.1
-    }
-}
-
-header h1 {
-    font-size: 3rem;
-    transition: 0.4s ease;
-    color: var(--white);
-    &:hover {
-        scale: 1.1
-    }
-}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 3vw;
+    padding: 20px 60px;
+    & .logo-header {
+        width: 180px;
+        cursor: pointer;
+        transition: 0.4s ease;
+        &:hover {
+            scale: 1.1
+        }
+    }
+    & h1 {
+        font-size: 3rem;
+        transition: 0.4s ease;
+        color: var(--white);
+        &:hover {
+            scale: 1.1
+        }
+    }
 }
 #sec-search {
     display: flex;
@@ -89,12 +88,12 @@ header {
 }
 .title {
     font-size: 4rem;
-    letter-spacing: 0.2vw;
+    letter-spacing: 4px;
     color: var(--letras);
     align-self: center;
 }
 .sub-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--white);
 }
 
@@ -104,9 +103,10 @@ header {
     z-index: 2;
     & ul {
         position: absolute;
-        top: 11.6vh;
+        top: 11.4vh;
     }
     & ul li {
+        list-style-type: none;
         width: 420px;
         background-color: var(--white);
         padding: 7px 20px;
@@ -122,7 +122,6 @@ header {
 }
 .div-input {
     display: flex;
-    gap: 1vw;
     align-items: center;
     position: relative;
     width: 420px;
@@ -143,7 +142,7 @@ header {
         font-size: 32px;
         color: rgb(195, 195, 195);
         position: absolute;
-        right: 20px;
+        right: 17px;
         }
     }
 
@@ -160,8 +159,6 @@ footer {
 /* Section Informações Animais */
 #sec-info {
     display: none;
-    flex-direction: column;
-    gap: 5vh;
     & div p span {
         font-weight: bold;
         color: var(--letras);
@@ -170,15 +167,15 @@ footer {
     & .border {
         display: flex;
         flex-direction: column;
-        width: 28vw;
+        width: 520px;
         color: var(--white);
-        gap: 1.5vw;
+        gap: 25px;
         font-size: 1.2rem;
         text-align: justify;
         justify-content: center;
         align-items: flex-start;
-        padding: 2vw;
-        border-radius: 1vw;
+        padding: 30px;
+        border-radius: 20px;
         border: 0.2rem solid var(--white);
         transition: scale 0.4s ease;
         cursor: pointer;
