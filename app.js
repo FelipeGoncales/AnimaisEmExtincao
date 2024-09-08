@@ -9,6 +9,11 @@ function click() {
 
     for (let animal of dados) {
         if (!searchInput) {
+            secSearch.style.display = 'none';
+            secInfo.style.display = 'flex';
+            mensagem = `<p class='text-na'>Digite o nome de algum animal para encontrá-lo!</p>`;
+            body.style.backgroundImage = 'url(assets/img/bg-padrao.jpg)';
+            secInfo.innerHTML = mensagem;
             return;
         } else if (animal.tags.join(' ').toLowerCase().includes(searchInput)) {
             secSearch.style.display = 'none';
@@ -27,15 +32,61 @@ function click() {
             break;
         }
     }
-
     if (!mensagem) {
         secSearch.style.display = 'none';
         secInfo.style.display = 'flex';
-        mensagem = `<p class='text-na'>Nenhum animal encontrado</p>`;
+        mensagem = `<p class='text-na'>Nenhum animal encontrado.</p>`;
         body.style.backgroundImage = 'url(assets/img/bg-padrao.jpg)';
     }
 
     secInfo.innerHTML = mensagem;
+}
+
+function listarAnimais() {
+    let ul = document.querySelector('ul');
+    let li = document.querySelector('li');
+    let searchInput = document.getElementById('search-input')
+    var lista = ``;
+    let contador = 0;
+    const limite = 4;
+
+    if (!searchInput) {
+        ul.innerHTML = ``;
+        return;
+    }
+    
+    for (let animal of dados) {
+        if (contador >= limite) {
+            break;
+        } else {
+            if (!searchInput.value) {
+                lista = ``;
+            } else if (animal.nome.toLowerCase().includes(searchInput.value)) {
+                lista += `
+                    <li class='item${contador}' onclick=completar(${contador})>${animal.nome}</li>
+                `
+                contador++;
+            }
+        }
+    
+        if (lista != ``) {
+            searchInput.style.borderRadius = '1em 1em 0 0';
+        } else {
+            searchInput.style.borderRadius = '1em 1em 1em 1em';
+        }
+    
+        ul.innerHTML = lista;
+        }
+}
+
+function completar(numero) {
+    let searchInput = document.getElementById('search-input');
+    let liItems = document.querySelectorAll('li');
+    searchInput.value = document.querySelector(`.item${numero}`).textContent;
+
+    liItems.forEach(li => li.remove())
+    searchInput.style.borderRadius = '1em 1em 1em 1em';
+    click();
 }
 
 function preloadImage(url) {
@@ -45,6 +96,9 @@ function preloadImage(url) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('search-input').addEventListener('keydown', click)
+    document.getElementById('search-input').addEventListener('input', function () {
+        click();
+        listarAnimais();
+    })
     dados.forEach(animal => preloadImage(animal.img));
 });

@@ -59,12 +59,10 @@ main{
     }
 }
 
-.white {
-    color: white;
-}
 header h1 {
     font-size: 3rem;
     transition: 0.4s ease;
+    color: var(--white);
     &:hover {
         scale: 1.1
     }
@@ -100,29 +98,54 @@ header {
     color: var(--white);
 }
 
-
+.div-pesquisa {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    & ul {
+        position: absolute;
+        top: 11.6vh;
+    }
+    & ul li {
+        width: 420px;
+        background-color: var(--white);
+        padding: 7px 20px;
+        transition: 0.1s;
+        cursor: pointer;
+        &:last-child {
+            border-radius: 0 0 1em 1em;
+        }
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
 .div-input {
     display: flex;
     gap: 1vw;
     align-items: center;
-    transition: 0.4s ease;
-    &:hover{
-        scale: 1.05;
-    }
+    position: relative;
+    width: 420px;
     & input{
         color: var(--black-gray);
         font-size: 1.5rem;
-        padding: 0.5vw 0.7vw;
-        width: 22vw;
+        padding: 7px 17px;
         border-radius: 40px;
-
+        width: 100%;
+        margin: 0;
+        border: var(--white) 3px solid;
+        &:focus {
+            outline: none;
+            /* border-radius: 1em 1em 0 0; */
+            }
+        }
+    & #search-icon {
+        font-size: 32px;
+        color: rgb(195, 195, 195);
+        position: absolute;
+        right: 20px;
+        }
     }
-    & i {
-        color: var(--white);
-        cursor: pointer;
-
-    }
-}
 
 
 footer {
@@ -172,7 +195,7 @@ footer {
 }
 .text-na {
     font-size: 2rem;
-    letter-spacing: 0.2vw;
+    letter-spacing: 3px;
     position: relative;
     top: -3vh;
     color: var(--white);
