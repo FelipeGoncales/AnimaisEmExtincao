@@ -290,3 +290,15 @@ let dados = [
         tags: ['jacaré-de-papo-amarelo', 'jacare', 'Caiman latirostris', 'crocodilo', 'América do Sul', 'america', 'áreas úmidas', 'caça ilegal']
     }
 ];
+
+// Ordenando por ordem alfabética
+
+dados.sort((a,b) => {
+    if (a.nome < b.nome) {
+        return -1;
+    } else if (a.nome > b.nome) {
+        return 1;
+    } else {
+        return 0;
+    }
+})
