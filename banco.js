@@ -4,7 +4,7 @@ let dados = [
         nomeCientifico: `Balaenoptera musculus`,
         habitat: `Aquático`,
         origem: `Oceano`,
-        descricao: `A baleia azul é o maior animal do planeta, com até 30 metros de comprimento e podendo pesar até 180 toneladas. Possui um corpo alongado e azulado, e se alimenta principalmente de krill, sendo conhecida por suas vocalizações profundas. Atualmente, a rainha dos mares enfrenta ameaças devido à caça comercial humana com o intuito de extrair o chamado "Óleo de Baleia", muito utilizado na indústria para iluminação, lubrificação de máquinas e produção de sabão.`,
+        descricao: `A baleia azul é o maior animal do planeta, com até 30 metros de comprimento e podendo pesar até 180 toneladas. Possui um corpo alongado e azulado, e se alimenta principalmente de krill, sendo conhecida por suas vocalizações profundas. Atualmente, a rainha dos mares enfrenta ameaças devido à caça comercial humana para extração de Óleo de Baleia`,
         img: 'assets/img/baleia-azul.jpg',
         color: '#4fbeff',
         tags: ['baleia azul', 'Balaenoptera musculus', 'maior animal', 'oceano', 'mar', 'krill', 'vocalizações profundas', 'óleo de baleia', 'aquático']
@@ -288,6 +288,56 @@ let dados = [
         img: 'assets/img/jacare-papo-amarelo.jpg',
         color: '#d7e879',
         tags: ['jacaré-de-papo-amarelo', 'jacare', 'Caiman latirostris', 'crocodilo', 'América do Sul', 'america', 'áreas úmidas', 'caça ilegal']
+    },     
+    {
+        nome: `Onça-pintada`,
+        nomeCientifico: `Panthera onca`,
+        habitat: `Terrestre`,
+        origem: `América Central e do Sul`,
+        descricao: `A onça-pintada é o maior felino das Américas, conhecida por sua pelagem dourada com manchas negras. Habita florestas tropicais e áreas de cerrado, sendo um predador topo de cadeia. Enfrenta ameaças de desmatamento e caça ilegal, com esforços de conservação focados na proteção de seu habitat natural.`,
+        img: 'assets/img/onca-pintada.jpg',
+        color: '#ffbf67',
+        tags: ['onça-pintada', 'Panthera onca', 'felino', 'América Central', 'América do Sul', 'florestas tropicais', 'cerrado', 'predador']
+    },
+    {
+        nome: `Lobo-guará`,
+        nomeCientifico: `Chrysocyon brachyurus`,
+        habitat: `Terrestre`,
+        origem: `América do Sul`,
+        descricao: `O lobo-guará é o maior canídeo da América do Sul, conhecido por suas longas pernas e pelagem avermelhada. Habita áreas de cerrado e campos abertos, sendo um animal solitário e onívoro. Enfrenta ameaças de perda de habitat e atropelamentos, com esforços de conservação voltados para a proteção do cerrado.`,
+        img: 'assets/img/lobo-guara.jpg',
+        color: '#ff9f45',
+        tags: ['lobo-guará', 'Chrysocyon brachyurus', 'canídeo', 'América do Sul', 'cerrado', 'campos abertos', 'onívoro']
+    },
+    {
+        nome: `Arara-azul`,
+        nomeCientifico: `Anodorhynchus hyacinthinus`,
+        habitat: `Terrestre`,
+        origem: `América do Sul`,
+        descricao: `A arara-azul é a maior espécie de arara, conhecida por sua plumagem azul vibrante e bico forte. Habita florestas tropicais e áreas de cerrado, sendo ameaçada pela captura ilegal e perda de habitat. Esforços de conservação incluem a proteção de áreas naturais e programas de reprodução em cativeiro.`,
+        img: 'assets/img/arara-azul.jpg',
+        color: '#4f8cff',
+        tags: ['arara-azul', 'Anodorhynchus hyacinthinus', 'ave', 'América do Sul', 'florestas tropicais', 'cerrado', 'plumagem azul']
+    },
+    {
+        nome: `Peixe-boi-marinho`,
+        nomeCientifico: `Trichechus manatus`,
+        habitat: `Aquático`,
+        origem: `América Central e do Sul`,
+        descricao: `O peixe-boi-marinho é um mamífero aquático herbívoro, conhecido por seu corpo robusto e comportamento pacífico. Habita águas costeiras e rios, sendo ameaçado por colisões com embarcações e perda de habitat. Esforços de conservação incluem a proteção de áreas aquáticas e a conscientização sobre a navegação segura.`,
+        img: 'assets/img/peixe-boi-marinho.jpg',
+        color: '#7fb7a5',
+        tags: ['peixe-boi-marinho', 'Trichechus manatus', 'mamífero aquático', 'América Central', 'América do Sul', 'águas costeiras', 'herbívoro']
+    },
+    {
+        nome: `Macaco-prego-galego`,
+        nomeCientifico: `Sapajus flavius`,
+        habitat: `Terrestre`,
+        origem: `Brasil`,
+        descricao: `O macaco-prego-galego é uma espécie de primata endêmica do Brasil, conhecida por sua inteligência e habilidade em usar ferramentas. Habita florestas tropicais do nordeste brasileiro e está criticamente ameaçado devido à perda de habitat e caça. Esforços de conservação incluem a proteção de remanescentes florestais e programas de reprodução.`,
+        img: 'assets/img/macaco-prego-galego.jpg',
+        color: '#d4a373',
+        tags: ['macaco-prego-galego', 'Sapajus flavius', 'primata', 'Brasil', 'florestas tropicais', 'inteligência', 'uso de ferramentas']
     }
 ];
 
